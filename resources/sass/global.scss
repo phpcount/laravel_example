@@ -1,0 +1,11 @@
+.text-dots {
+  display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input.form-control,
+input.form-control:focus {
+  background-color: #fff;
+}
