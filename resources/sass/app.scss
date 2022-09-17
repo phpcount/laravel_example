@@ -7,9 +7,20 @@
 @import 'global';
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
 
+//fontawesome-free
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// header
+@import "modules/header";
+
+// hero section
+@import "modules/hero";
+
+// article
+@import "modules/article";
