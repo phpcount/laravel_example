@@ -1,8 +1,6 @@
-import './bootstrap';
-
 import { createApp } from 'vue';
-import App from './blog/App.vue';
+import App from './components/App.vue';
 
-const app = createApp(App)
+createApp(App)
   // .use()
   .mount("#app");
