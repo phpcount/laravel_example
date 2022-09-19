@@ -9,7 +9,7 @@
         @foreach($articles as $article)
             <div class="col-6 pb-3">
                 <div class="card">
-                    <img src="{{$article->img}}" class="card-img-top" alt="...">
+                    <img src="{{$article->img}}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{$article->title}}</h5>
                         <p class="card-text">{{$article->getBodyPreview()}}</p>

@@ -5,7 +5,9 @@
     white-space: nowrap;
 }
 
+textarea.form-control,
 input.form-control,
+textarea.form-control:focus,
 input.form-control:focus {
   background-color: #fff;
 }

@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\{ArticleController, CommentController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::prefix('article')->group(function () {
+    Route::get('/', [ ArticleController::class, 'show' ]);
+    Route::put('/views/inc', [ ArticleController::class, 'viewsIncrement' ]);
+    Route::put('/likes/inc', [ ArticleController::class, 'likesIncrement' ]);
+    Route::post('/comment/add', [ CommentController::class, 'store' ]);
 });
+
+Route::fallback(fn() => abort(404));
