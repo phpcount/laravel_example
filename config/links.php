@@ -2,6 +2,6 @@
 
 return [
     'PROFILE' => [
-        'GITHUB' => env('https://github.com/phpcount')
+        'GITHUB' => 'https://github.com/phpcount'
     ]
 ];
